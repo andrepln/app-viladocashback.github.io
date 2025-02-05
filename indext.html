@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vila do Cashback - Redirecionamento: App</title>
+  <script>
+    window.onload = function() {      
+      // Verifica se deve redirecionar para o App
+      var params = new URLSearchParams(window.location.search);
+      var redirect = params.get("redirect");
+      if (!!redirect) {
+        window.location.href = redirect;
+      }
+    };
+  </script>
+</head>
+<body>
+  <h1>Redirecionando para App...</h1>
+</body>
+</html>
